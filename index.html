@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html ng-app="timutirobani">
+  <head>
+  <title>Mufti Robani - Personal Website</title>
+
+    <meta name="viewport" content="initial-scale=0.1">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="translate" />
+    <link rel="icon" href="" type="image/gif" sizes="16x16px">
+
+    <meta name="author" content="Mufti Robani">
+    <meta name="keywords" content="Developer Web Jakarta Web Design Jakarta Developer Jakarta Programmer Jakarta">
+    <meta name="description" content="Developer Aplikasi Jakarta Konsultasi Aplikasi Digital Jasa pembuatan Aplikasi jasa pembuatan web jasa pembuatan website">
+
+    <meta property="og:site_name" content="Mufti Robani">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" name="url" content="https://timutirobani.github.io">
+    <meta property="og:title" name="title" content="Developer Web Jakarta Web Design Jakarta Developer Jakarta Programmer Jakarta">
+    <meta property="og:description" content="Developer Aplikasi Jakarta Konsultasi Aplikasi Digital Jasa pembuatan Aplikasi jasa pembuatan web jasa pembuatan website" />
+    <meta property="og:image" name="image" content="Developer Aplikasi Jakarta Konsultasi Aplikasi Digital Jasa pembuatan Aplikasi jasa pembuatan web jasa pembuatan website">
+    <meta property="og:image" itemprop="image" content="https://timutirobani.github.io/public/assets/images/suzukilogo.png" />
+
+    <meta property="og:image:width" content="650" />
+    <meta property="og:image:height" content="433" />
+    <meta property="og:image:type" content="image/jpeg" />
+
+    <meta name="dcterms.subject" content="timutirobani" />
+    <meta name="apple-mobile-web-app-capable" content="true">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Developer Aplikasi Jakarta Konsultasi Aplikasi Digital Jasa pembuatan Aplikasi jasa pembuatan web jasa pembuatan website">
+
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js" integrity="sha512-7oYXeK0OxTFxndh0erL8FsjGvrl2VMDor6fVqzlLGfwOQQqTbYsGPv4ZZ15QHfSk80doyaM0ZJdvkyDcVO7KFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.min.js" integrity="sha512-5zOAub3cIpqklnKmM05spv4xttemFDlbBrmRexWiP0aWV8dlayEGciapAjBQWA7lgQsxPY6ay0oIUVtY/pivXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- <base href="#" /> -->
+
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light navbar-1">
+    <div class="container">
+      <a class="navbar-brand" href="/"><div></div> Mufti Robani <span> / Personal Website</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-top">
+          <li class="nav-item">
+            <a class="nav-link" ng-class="getClassParent('/')" aria-current="page" href="#!">About me</a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link" ng-class="getClassParent('/resume')" aria-current="page" href="#!resume">Resume</a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link" ng-class="getClassParent('/portofolio')" aria-current="page" href="#!portofolio">Portofolio</a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link" ng-class="getClassParent('/certificate')" aria-current="page" href="#!certificate">Certificate</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/article">Article</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" ng-class="getClassParent('/contact')" aria-current="page" href="#!contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <span ng-view></span>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="footer-1">
+              <p>© 2022 by <a href="https://instagram.com/timutirobani" target="_blank">Mufti Robani</a>.</p>
+              <p>Proudly created with love and care</p>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="footer-1 black">
+                  <p>Phone Number</p>
+                  <p><a href="tel:+6285159863880">0812-8487-0823</a></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer-1 black">
+                  <p>Email</p>
+                  <p><a href="mailto:timutirobani@gmail.com">murobbani18@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="footer-1">
+                  <p>Follow</p>
+                  <ul class="nav justify-content-center">
+                    <!-- <li class="nav-item">
+                      <a class="nav-link home-2-2-4" target="_blank" href="https://facebook.com/timutirobani">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link home-2-2-4" target="_blank" href="https://linkedin.com/in/timutirobani">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link home-2-2-4"  target="_blank" href="https://instagram.com/timutirobani">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link home-2-2-4" target="_blank" href="https://api.whatsapp.com/send/?phone=6281284870823&text=Hello+timutirobani!&app_absent=0">
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
